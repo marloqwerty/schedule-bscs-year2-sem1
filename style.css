@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: 100%;
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*
+=============== 
+Slider Styles
+===============
+*/
+
+.timetable {
+	display: grid;
+	grid-template-columns: repeat(7, lfr);
+}
+
+.hours {
+	background: red;
+}
