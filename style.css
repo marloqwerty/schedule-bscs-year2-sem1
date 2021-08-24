@@ -27,11 +27,14 @@ Slider Styles
 ===============
 */
 
-.timetable {
-	display: grid;
-	grid-template-columns: repeat(7, lfr);
+.table {
+	border: 1px solid black;
 }
 
 .hours {
 	background: red;
+}
+
+td{
+	border: 1px solid black;
 }
