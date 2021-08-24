@@ -1,5 +1,4 @@
 import meme from './meme.js';
-import testimonials from './testimonials.js';
 
 const container = document.querySelector('.text');
 
@@ -7,20 +6,45 @@ const container = document.querySelector('.text');
 const day = new Date();
 
 let startSlider = (position) => {
-	Object.keys(meme[position].schedule).forEach((key) => console.log(key, meme[position].schedule[key]));
+	var col = [];
+	for (var i = 0; i < meme[position].schedule.length; i++) {
+		for (var key in meme[position].schedule[i]) {
+			if (col.indexOf(key) === -1) {
+				col.push(key);
+			}
+		}
+	}
 
-	// n + type;
-	console.log(position);
+	// Create a table.
+	var table = document.createElement('table');
 
-	container.innerHTML = `
-	
-	<h1>${meme[position].day}</h1>
-	<h2>${meme[position].text}</h2>
-	<h3>${meme[position].schedule}</h3>
-	`;
+	// Create table header row using the extracted headers above.
+	var tr = table.insertRow(-1); // table row.
+
+	for (var i = 0; i < col.length; i++) {
+		var th = document.createElement('th'); // table header.
+		th.innerHTML = col[i];
+		tr.appendChild(th);
+	}
+
+	// add json data to the table as rows.
+	for (var i = 0; i < meme[position].schedule.length; i++) {
+		tr = table.insertRow(-1);
+
+		for (var j = 0; j < col.length; j++) {
+			var tabCell = tr.insertCell(-1);
+			tabCell.innerHTML = meme[position].schedule[i][col[j]];
+		}
+	}
+
+	// Now, add the newly created table with json data, to a container.
+	var divShowData = document.getElementById('showData');
+	divShowData.innerHTML = '';
+	divShowData.appendChild(table);
 };
 
-startSlider(day.getDay());
+startSlider(3);
+// startSlider(day.getDay());
 
 /*   var p = {
 "p1": "value1",
