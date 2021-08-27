@@ -5,45 +5,52 @@ const meme = [
 	},
 	{
 		day: 'monday',
-		text: 'It’s Monday Again. >>_<<',
+		text: 'it’s monday again. >>_<<',
 		schedule: [
-			{ subject: 'EnviScie', time: '8:00-9:00', prof: 'Mr. Quack' },
-			{ subject: 'Discrete Math', time: '9:00-10:00', prof: 'Mr. Quack' },
+			{ subject: 'envi sci', time: '8:00-9:00', prof: 'kakashi' },
+			{ subject: 'ethics', time: '9:00-10:00', prof: 'levi ackerman' },
+			{ subject: ' digital design', time: '13:00-14:00', prof: 'sai' },
+			{ subject: 'discrete math', time: '14:00-17:00', prof: 'master roshi' },
 		],
 	},
 	{
 		day: 'tuesday',
-		text: 'Atleast it’s not Monday',
+		text: 'atleast it’s not monday',
 		schedule: [
-			{ subject: 'Database System', time: '11:00-12:00', prof: 'Koro-Sensei' },
-			{ subject: 'Data Structure', time: '13:00-14:00', prof: 'Kakashi' },
+			{ subject: 'database system', time: '11:00-12:00', prof: 'napoleon cacanindin' },
+			{ subject: 'data structure', time: '13:00-14:00', prof: 'ralf dela cruz ' },
 		],
 	},
 	{
 		day: 'wednesday',
-		text: 'Atleast it’s not Monday',
+		text: 'atleast it’s not monday',
 		schedule: [
-			{ subject: 'Envi Sci', time: '8:00-9:00', prof: 'Kakashi' },
-			{ subject: 'Discrete Math', time: '9:00-10:00', prof: 'Master Roshi' },
-			{ subject: 'Database System', time: '14:00-17:00', prof: 'Koro-Sensei' },
+			{ subject: 'envi sci', time: '8:00-9:00', prof: 'kakashi' },
+			{ subject: 'ethics', time: '9:00-10:00', prof: 'levi ackerman' },
+			{ subject: ' digital design', time: '14:00-17:00', prof: 'sai' },
 		],
 	},
 	{
 		day: 'thursday',
 		text: '...',
 		schedule: [
-			{ subject: 'Data Structure', time: '8:00-9:00', prof: 'Kakashi' },
-			{ subject: 'Discrete Math', time: '9:00-10:00', prof: 'Master Roshi' },
-			{ subject: 'Database System', time: '14:00-17:00', prof: 'Koro-Sensei' },
+			{ subject: 'data structure', time: '8:00-11:00', prof: 'ralf dela cruz' },
+			{ subject: 'discrete math', time: '11:00-12:00', prof: 'master roshi' },
+			{ subject: 'database system', time: '14:00-17:00', prof: 'napoleon cacanindin' },
 		],
 	},
 	{
 		day: 'friday',
-		text: 'I dont feel it',
+		text: 'i dont feel it',
+		schedule: [
+			{ subject: 'envi sci', time: '8:00-9:00', prof: 'kakashi' },
+			{ subject: 'ethics', time: '9:00-10:00', prof: 'levi ackerman' },
+			{ subject: 'path fit', time: '1:00-17:00', prof: 'ittetsu takeda' },
+		],
 	},
 	{
 		day: 'saturday',
-		text: 'No classes, idiot',
+		text: 'no classes, idiot',
 	},
 ];
 
