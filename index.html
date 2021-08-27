@@ -10,20 +10,49 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandsUp!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <section>
+
         <hgroup class="text"></hgroup>
-        <div class="table" id="showData"></div>
+        <div class="app">
+            <label for="">
+                <select id="subject-select">
+
+                </select>
+            </label>
+            <div id="showData"></div>
+        </div>
+
     </section>
-    <script type="module" src="script.js"></script>
+    <!-- <button
+        onclick="downloadImage('link', 'schedule.png')">DOWNLOAD</button>
+
+    <script>
+        function downloadImage(url, name) {
+            fetch(url)
+                .then(resp => resp.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    
+                    a.download = name;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(() => alert('An error sorry'));
+        }
+
+    </script> -->
+    <script type="module" src="script copy.js"></script>
 </body>
 
 
 </html>
-
-
